@@ -73,9 +73,19 @@ if ( VarNov == "Sim") :
 
     if ( VarNov == "Sim" ):
      Sim(VarNov)
+    
     else:
-         print ("\nTudo bem então " + nome + ", obrigado pela resposta")
-         print ()
+         print ("\nTudo bem então " + nome + ", obrigado pela resposta\n")
+         print ("Gabarito:\n")
+         r1 = "b"
+         r2 = "c"
+         r3 = "a"
+         r4 = "a"
+         print ("Questão 1: " , r1 ,"\n")
+         print ("Questão 2: " , r2 ,"\n")
+         print ("Questão 3: " , r3 ,"\n")
+         print ("Questão 4: " , r4 ,"\n")
+         
 
 else:
      print ("\nTudo bem então " + nome + ", obrigado pela resposta")

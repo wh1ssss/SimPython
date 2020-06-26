@@ -74,9 +74,9 @@ if ( VarNov == "Sim") :
     if ( VarNov == "Sim" ):
      Sim(VarNov)
     else:
-         print ("Tudo bem então " + nome + ", obrigado pela resposta")
+         print ("\nTudo bem então " + nome + ", obrigado pela resposta")
          print ()
 
 else:
-     print ("Tudo bem então " + nome + ", obrigado pela resposta")
+     print ("\nTudo bem então " + nome + ", obrigado pela resposta")
 
