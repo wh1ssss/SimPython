@@ -1,10 +1,5 @@
-nome = input ("Boa tarde, qual é o seu nome: ")
-a1 = input ("Vamos iniciar o simulado " + nome + "? ")
-resp = 0
-print ()
-
-if ( a1 == "Sim") :
-
+def Sim(VarNov):
+    resp = 0
     print ("                                                                               QUESTOES                                                                 ")
     
     print ("1) Em um programa escrito em linguagem Python, o comando de atribuição x = int(5.9) fará com que a variável x passe a armazenar um valor inteiro igual a 6.")
@@ -61,10 +56,21 @@ if ( a1 == "Sim") :
 
     elif (resp == 4) :
         print ("Parabéns " + nome + ", você acertou todas as questões.")
+
+
+nome = input ("Boa tarde, qual é o seu nome: ")
+VarNov = input ("Vamos iniciar o simulado " + nome + "? ")
+
+print ()
+
+if ( VarNov == "Sim") :
+
+    Sim(VarNov)
     
+VarNov = input ("Gostaria de fazer o questionário novamente?")
 
+if ( VarNov == "Sim" ):
+     Sim(VarNov)
 else:
-    print ("Tudo bem então " + nome + ", obrigado pela resposta")
+     print ("Tudo bem então " + nome + ", obrigado pela resposta")
 
-        
-        
