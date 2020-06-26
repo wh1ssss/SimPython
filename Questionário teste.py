@@ -66,11 +66,14 @@ print ()
 if ( VarNov == "Sim") :
 
     Sim(VarNov)
-    
-VarNov = input ("Gostaria de fazer o questionário novamente?")
 
-if ( VarNov == "Sim" ):
+    VarNov = input ("Gostaria de fazer o questionário novamente?")
+
+    if ( VarNov == "Sim" ):
      Sim(VarNov)
+    else:
+         print ("Tudo bem então " + nome + ", obrigado pela resposta")
+
 else:
      print ("Tudo bem então " + nome + ", obrigado pela resposta")
 
