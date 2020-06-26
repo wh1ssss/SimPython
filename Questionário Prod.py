@@ -1,10 +1,5 @@
-nome = input ("Boa tarde, qual é o seu nome: ")
-a1 = input ("Vamos iniciar o simulado " + nome + "? ")
-resp = 0
-print ()
-
-if ( a1 == "Sim") :
-
+def Sim(VarNov):
+    resp = 0
     print ("                                                                               QUESTOES                                                                 ")
     
     print ("1) Em um programa escrito em linguagem Python, o comando de atribuição x = int(5.9) fará com que a variável x passe a armazenar um valor inteiro igual a 6.")
@@ -51,20 +46,39 @@ if ( a1 == "Sim") :
 
     print ()
     if (resp == 1) :
-        print ("Você acertou somente " , resp , " questão, estude mais e volte a fazer o simulado " + nome + ".")
+        print ("Você acertou somente " , resp , " questão, estude mais e volte a fazer o simulado " + nome + ".\n")
 
     elif (resp == 2):
-        print ("Você acertou somente " , resp , " questões, estude mais e volte a fazer o simulado " + nome + ".")
+        print ("Você acertou somente " , resp , " questões, estude mais e volte a fazer o simulado " + nome + ".\n")
         
     elif (resp == 3) :
-        print ("Parabéns " + nome + ", voce acertou" , resp , "questões e mandou bem mas não acertou todas, estude mais.")
+        print ("Parabéns " + nome + ", voce acertou" , resp , "questões e mandou bem mas não acertou todas, estude mais.\n")
 
     elif (resp == 4) :
-        print ("Parabéns " + nome + ", você acertou todas as questões.")
-    
+        print ("Parabéns " + nome + ", você acertou todas as questões.\n")
+        print ()
+
+
+nome = input ("Boa tarde, qual é o seu nome: \n")
+print ()
+VarNov = input ("Vamos iniciar o simulado " + nome + "?\n")
+
+print ()
+
+if ( VarNov == "Sim") :
+
+    Sim(VarNov)
+
+    VarNov = input ("Gostaria de fazer o simulado novamente?\n")
+
+    if ( VarNov == "Sim" ):
+     Sim(VarNov)
+    else:
+         print ("\nTudo bem então " + nome + ", obrigado pela resposta")
+         print ()
 
 else:
-    print ("Tudo bem então " + nome + ", obrigado pela resposta")
+     print ("\nTudo bem então " + nome + ", obrigado pela resposta")
 
         
         
